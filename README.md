@@ -3,7 +3,7 @@
 Hi 👋 I am Abdelrahman Tlayjeh
 ====================================
 
-Full Stack Developer & FinTech researcher
+Full Stack Developer & Trading Bots developer
 ------------------------------------------
 
 <!-- ============ Social media ============-->
@@ -11,8 +11,6 @@ Full Stack Developer & FinTech researcher
 <p align="left">
 <!--LinkedIn-->
 <a href="https://linkedin.com/in/abdelrahman-tlayjeh" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="abdelrahman-tlayjeh" height="30" width="40" /></a>
-<!--Instagram-->
-<!-- <a href="https://instagram.com/abdelrahman_tlayjeh" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="abdelrahman_tlayjeh" height="30" width="40" /></a> -->
 <!--HackerRank-->
 <a href="https://www.hackerrank.com/abdelrahman_tla" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="abdelrahman_tla" height="30" width="40" /></a>
 </p>
