@@ -1,6 +1,6 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=abdelrahman-tlayjeh&label=Profile%20views&color=139AE1&style=flat" alt="abdelrahman-tlayjeh" /> </p>
 
-Hi 👋 I am Abdelrahman Tlayjeh
+Salam 👋 I am Abdelrahman
 ====================================
 
 Full Stack Developer & Trading Bots developer
