@@ -1,0 +1,382 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Lucida Handwriting';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+  }
+  body::-webkit-scrollbar-track {
+    background-image: linear-gradient(360deg, #10469c 0%, #0AADE6 74%);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(232, 232, 242);
+    border-radius: 20px;
+}
+
+/*---Header----*/
+header{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li, a{
+    font-weight: 300;
+    font-size: 25px;
+    color: #094582;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 0px 0px 40px;
+    transition: all 0.3s ease 0s;
+}
+
+li a{
+    padding: 0;
+}
+
+li a:hover{
+    color: #0AADE6;
+}
+
+#current{
+    text-decoration: underline;
+    cursor: not-allowed;
+}
+
+/*--- Main-----*/
+.landscape *,
+.landscape *:after,
+.landscape *:before {
+    position: absolute;
+}
+  
+.landscape {
+    height: 100vh;
+    background: linear-gradient(to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.cloud {
+    width: 80vmin;
+    height: 6vmin;
+    background: currentcolor;
+    color: #ffffff;
+    top: 24vmin;
+    left: 20vmin;
+    border-radius: 50%;
+    box-shadow: 30vmin 0.5vmin 0 -1vmin currentcolor,
+        -25vmin 0 0 -0.6vmin currentcolor;
+    opacity: 0.5;
+    transform: translate3d(-150vmin, 0, 0);
+    animation: clouds 120s infinite;
+    animation-delay: -10s;
+}
+
+@keyframes clouds {
+    50% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(150vmin, 0, 0);
+    }
+}
+
+.cloud-1 {
+    left: 60vmin;
+    top: 15vmin;
+    opacity: 0.6;
+    filter: blur(1px);
+    animation-delay: 0;
+    animation-duration: 100s;
+}
+
+/*Intro text*/
+#intro{
+    z-index: 2;
+    position: absolute;
+    color: #080808;
+    width: 100%;
+    text-align: center;
+    top: 15%;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#intro h3{
+    padding-bottom: 20px;
+}
+#intro p{
+    line-height: 40px;
+}
+#sub-intro{
+    top: 45%;
+    font-size: 35px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+#discover{
+    border: 1px solid #094582;
+    margin-top: 5%;
+    border-radius: 15px 0px 15px 0px;
+    background-color: #0AADE6;
+    padding: 5px 5px;
+    text-decoration: none;
+    color: aliceblue;
+    animation: vibrate 1s linear infinite;
+}
+
+@keyframes vibrate{
+    0%{
+        transform: scale(1.1);
+    }
+    25%{
+        transform: scale(1.15);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    75%{
+        transform: scale(1.15);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+#discover:hover{
+    text-decoration: underline;
+    animation: none;
+}
+
+#more{
+    margin-left: 2%;
+}
+
+#more:hover{
+    text-decoration: underline;
+}
+
+
+/*wave*/
+#wave_container{
+    top: 85%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+#wave1{
+    background-size: 500px 100px !important;
+    height: 90px;
+    animation: wave1 30s linear infinite;
+    opacity: 0.8;
+    animation-delay: 0s;
+    bottom: 0;
+}
+@keyframes wave1{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 500px;
+    }
+}
+#wave2{
+    background-size: 400px 100px !important;
+    height: 90px;
+    animation: wave2 30s linear infinite;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+@keyframes wave2{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 400px;
+    }
+}
+#wave3{
+    background-size: 450px 100px !important;
+    height: 80px;
+    animation: wave3 20s linear infinite;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+@keyframes wave3{
+    0%{
+        background-position-x: 450px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+/*space  between wave and canvas*/
+#space{
+    height: 50px;
+    background: linear-gradient(to bottom, #084581  10%, #0AADE6 50%);
+}
+
+/*---- Canvas----*/
+canvas{
+    width: 100%;
+    display: block;
+}
+
+#canvas1{
+    background-color: #4d5dfb;
+    background-image: linear-gradient(360deg, #10469c 0%, #0AADE6 74%);
+}
+#canvas2{
+    background-color: #045de9;
+    background-image: linear-gradient(360deg, #13428d 0%, #10469c 60%);
+}
+#canvas3{
+    background-color: #045de9;
+    background-image: linear-gradient(360deg, #123d83 0%, #13428d 60%);
+}
+#canvas4{
+    position: absolute;
+    top: 100%;
+    z-index: 5;
+}
+
+footer{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background-image: linear-gradient(360deg, #133872 0%, #123d83 60%);
+    color: #ffffff;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+
+@media(max-width: 700px){
+    .cloud{
+        top: 20%;
+    }
+
+    .cloud-1{
+        top: 30%;
+    }
+
+    #intro{
+        top: 25%;
+    }
+
+    #sub-intro{
+        font-size: 25px;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    li, a{
+        padding: 0px 0px 0px 30px;
+        font-size: 18px;
+    }
+
+    /*waves*/
+    #wave_container{
+        top: 85%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    
+    .wave{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        
+    }
+    
+    #wave1{
+        background-size: 250px 50px !important;
+        height: 35px;
+        animation: wave1 30s linear infinite;
+        opacity: 0.8;
+        animation-delay: 0s;
+        bottom: 0;
+    }
+    @keyframes wave1{
+        0%{
+            background-position-x: 0;
+        }
+        100%{
+            background-position-x: 250px;
+        }
+    }
+    #wave2{
+        background-size: 200px 50px !important;
+        height: 35px;
+        animation: wave2 30s linear infinite;
+        opacity: 1;
+        animation-delay: 0s;
+        bottom: 0;
+    }
+    @keyframes wave2{
+        0%{
+            background-position-x: 0;
+        }
+        100%{
+            background-position-x: 200px;
+        }
+    }
+    #wave3{
+        background-size: 225px 50px !important;
+        height: 30px;
+        animation: wave3 20s linear infinite;
+        opacity: 1;
+        animation-delay: 0s;
+        bottom: 0;
+    }
+    @keyframes wave3{
+        0%{
+            background-position-x: 225px;
+        }
+        100%{
+            background-position-x: 0px;
+        }
+    }
+}

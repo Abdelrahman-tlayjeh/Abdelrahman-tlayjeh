@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+    font-family: 'Comic Sans MS', 'Lucida Handwriting';
+}
+
+html{
+    background-image: linear-gradient(360deg, #0c2d61 0%, #13428d 60%);
+    scroll-behavior: smooth;
+}
+
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+body::-webkit-scrollbar-track {
+    background-image: linear-gradient(360deg, #0c2d61 0%, #13428d 60%);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(232, 232, 242);
+    border-radius: 20px;
+}
+
+/*---Header----*/
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li, a{
+    font-weight: 300;
+    font-size: 25px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 0px 0px 40px;
+    transition: all 0.3s ease 0s;
+}
+
+li a{
+    padding: 0;
+}
+
+li a:hover{
+    color: rgb(24, 136, 136);
+}
+
+#current{
+    text-decoration: underline;
+    cursor: not-allowed;
+}
+
+/*Main*/
+
+/*background canvas*/
+#bg_canvas{
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+/*title*/
+.container > h3{
+    text-decoration: underline;
+    margin-bottom: 7px;
+    font-size: 25px;
+}
+
+.container > p{
+    margin-bottom: 20px;
+}
+
+#ref_list{
+    display: block;
+}
+
+.ref_item{
+    display: block;
+}
+
+.orange{
+    color: orange;
+}
+
+@media(max-width: 500px){
+    li, a{
+        font-size: 16px;
+    }
+
+    .container > h3{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+}

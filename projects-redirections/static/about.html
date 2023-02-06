@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="stylesheet" href="styles//about_style.css">
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li id="current">About</li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h3 class="title">About the Project</h3>
+            <p>
+                The main page consist of <span class="orange">3</span> main canvas used to handle fish and <span class="orange">one</span> as background to handle bubbles. 
+                About page consist of only <span class="orange">one</span> canvas that handle bubbles.
+                Portfolio page consist of <span class="orange">2</span> canvas, one to handle choosen fish and one to handle bubbles.
+            </p>
+            <p>
+                There is a total of <span class="orange">1102</span> unique, programmatically generated fish.
+                Each one has <span class="orange">2 sprite sheets</span> (One <span class="orange">48x48 px</span> used in the home page and one <span class="orange">96x96 px</span> used in the portfolio page) 
+                and <span class="orange">2 json files</span> that holds location of each sprite sheet, as well as <span class="orange">unique id</span> and the fish <span class="orange">speed</span>.
+            </p>
+            <p>
+                Each fish will always be moving in a constant speed, but the body animation speed is randomly generated each time the page is reloaded.
+            </p>
+        </div>
+
+        <div class="container">
+            <h3 class="title">Portfolio</h3>
+            <p>
+                In the portfolio page, user can enter the fish ids they want, and after confirmation, choosen fish will appear in the canvas.
+            </p>
+        </div>
+
+        <div class="container">
+            <h3 class="title">Sprite sheets</h3>
+            <div style="width: 70%; margin: auto;">
+                <img style="display: block;" src="sprites//96x96/0.png" alt="">
+            </div>
+            <p>
+                Sprite sheets contains 4 images with the same width and height. Each column is one frame of a complete animation, each row is a direction. After a certain count of frames, one part of a sprite sheet is drawn.  
+            </p>
+        </div>
+        <div class="container">
+            <h3 class="title">References</h3>
+            <ul id="ref_list">
+                <li class="ref_item">--> <a href="https://codepen.io/pehaa/pen/yLVeLNg" target="_blank">Clouds</a></li>
+                <li class="ref_item">--> <a href="https://www.youtube.com/watch?v=MMNEEdGa5eE" target="_blank">Waves</a></li>
+                <li class="ref_item">--> <a href="https://codepen.io/GhostRider/pen/oNvoNv" target="_blank">Custom scroll bar</a></li>
+                <li class="ref_item">--> <a href="https://codepen.io/stealy/pen/povYwJj" target="_blank">Bubbles</a></li>
+                <li class="ref_item">--> <a href="https://github.com/Abdelrahman-tlayjeh/sprite_sheets_generator" target="_blank">Sprite sheets generator</a></li>
+            </ul>
+        </div>
+    </main>
+    <canvas id="bg_canvas"></canvas>
+    <script type="text/javascript" src="scripts//background.js"></script>
+    <script type="text/javascript" src="scripts//about.js"></script>
+</body>
+</html>

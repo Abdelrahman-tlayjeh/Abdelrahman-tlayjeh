@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="stylesheet" href="styles//index_style.css">
+
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav_links">
+                <li id="current">Home</li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="intro">
+            <div id="sub-intro">
+                <h3>CSC325 Final Project</h3>
+                <p>
+                    Using html, css, and javascript/jquery.
+                </p>
+                <a id="discover" href="#canvas2">Discover</a>
+                <a id="more" href="about.html">Learn more</a>
+            </div>
+        </div>
+        <div class="landscape">
+            <div class="cloud"></div>
+            <div class="cloud cloud-1"></div>
+            <div id="wave_container">
+                <div class="wave" id="wave1" style="background: url('img//wave.png');"></div>
+                <div class="wave" id="wave2" style="background: url('img//wave_light.png');"></div>
+                <div class="wave" id="wave3" style="background: url('img//wave_dark.png');"></div>
+            </div>
+        </div>
+        <div id="space"></div>
+        <canvas id="canvas1"></canvas>
+        <canvas id="canvas2"></canvas>
+        <canvas id="canvas3"></canvas>
+        <!--Canvas of bubbles-->
+        <canvas id="canvas4"></canvas>
+        
+        <script type="text/javascript" src="scripts//info.js"></script>
+        <script type="text/javascript" src="scripts//background.js"></script>
+	<script type="text/javascript" src="scripts//fish.js"></script>
+        <script type="text/javascript" src="scripts//index.js"></script>
+    </main>
+    <footer>
+        <h3>CSC325 Final Project &#9400 Abdelrahman Tlayjeh</h3>
+    </footer>
+</body>
+</html>

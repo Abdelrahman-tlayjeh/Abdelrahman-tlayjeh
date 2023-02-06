@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../img/site.webmanifest">
+    <title>Error 500</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            color: aliceblue;
+            font-family: 'Comic Sans MS', 'Lucida Handwriting';
+        }
+        html{
+            background-image: linear-gradient(360deg, #061835 0%, #0f2f64 60%);
+            height: 100%;
+        }
+        div{
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            margin-top: 10%;
+        }
+        h1{
+            font-size: 80px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        canvas{
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <div>
+        <h1>500</h1>
+        <h2>It seems that there is a problem with the server.</h2>
+        <h2>Sorry about that. Please try again later...</h2>
+    </div>
+
+    <script>
+        const canvas = document.querySelector("canvas");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        const ctx = canvas.getContext("2d");
+
+        window.addEventListener("resize", function(){
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;  
+        })
+
+
+        class Bubble {
+            constructor(){
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.radius = Math.random() * 3 + 5; // 4 <= 6
+                this.speed = 0.7;
+            }
+
+            update(){
+                this.y -= this.speed;
+            }
+
+            draw(){
+                ctx.save()
+                ctx.strokeStyle = "#8bc9ee";
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.stroke();
+                //line
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius/1.5, 0, Math.PI * 1.5, true);
+                ctx.stroke();
+
+                ctx.restore();
+            }
+
+            reset_position(){
+                this.x = Math.random() * canvas.width;
+                this.y = canvas.height;
+            }
+        }
+
+        var bubbles = [];
+
+        function generate(){
+            for (let i = 0; i < 35; i++)
+                bubbles.push(new Bubble());
+        }
+
+        function handle_bubbles(){
+            for (let i = 0; i < bubbles.length; i++){
+                if (bubbles[i].y < 0)
+                    bubbles[i].reset_position();
+                bubbles[i].update();
+                bubbles[i].draw();
+            }
+        }
+
+        function animate(){
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            handle_bubbles();
+            requestAnimationFrame(animate);
+        }
+
+        generate();
+        animate();
+    </script>
+</body>
+</html>

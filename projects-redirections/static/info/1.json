@@ -1,0 +1,9 @@
+{
+  "index": 1,
+  "src": "sprites\\96x96\\1.png",
+  "speed": 0.8,
+  "sprite_cols": 2,
+  "sprite_rows": 2,
+  "frame_width": 96,
+  "frame_height": 96
+}
