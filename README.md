@@ -1,11 +1,12 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=abdelrahman-tlayjeh&label=Profile%20views&color=139AE1&style=flat" alt="abdelrahman-tlayjeh" /> </p>
 
-Salam 👋 I am Abdelrahman
+Hi 👋 I am Abdelrahman
 ====================================
 
-Full Stack Developer & Trading Bots developer
+Full Stack Developer
 ------------------------------------------
 
+<h3><a href="https://abdelrahman-tlayjeh.github.io/">My Portfolio</a></h3>
 <!-- ============ Social media ============-->
 <h3 align="left">Connect with me:</h3>
 <p align="left">
