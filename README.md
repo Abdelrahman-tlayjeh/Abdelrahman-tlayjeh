@@ -8,13 +8,15 @@ Full Stack Developer
 
 <h3><a href="https://abdelrahman-tlayjeh.github.io/">My Portfolio</a></h3>
 <!-- ============ Social media ============-->
+<!--
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<!--LinkedIn-->
+
 <a href="https://linkedin.com/in/abdelrahman-tlayjeh" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="abdelrahman-tlayjeh" height="30" width="40" /></a>
-<!--HackerRank-->
+
 <a href="https://www.hackerrank.com/abdelrahman_tla" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="abdelrahman_tla" height="30" width="40" /></a>
 </p>
+-->
 
 ------------------------------------------
 ### **Skills:**
