@@ -6,7 +6,7 @@ Hi 👋 I am Abdelrahman
 Full Stack Developer
 ------------------------------------------
 
-<h3><a href="https://abdelrahman-tlayjeh.github.io/">My Portfolio</a></h3>
+<!-- <h3><a href="https://abdelrahman-tlayjeh.github.io/">My Portfolio</a></h3>>
 <!-- ============ Social media ============-->
 <!--
 <h3 align="left">Connect with me:</h3>
