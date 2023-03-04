@@ -1,4 +1,4 @@
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=abdelrahman-tlayjeh&label=Profile%20views&color=139AE1&style=flat" alt="abdelrahman-tlayjeh" /> </p>
+<!--<p align="left"> <img src="https://komarev.com/ghpvc/?username=abdelrahman-tlayjeh&label=Profile%20views&color=139AE1&style=flat" alt="abdelrahman-tlayjeh" /> </p>-->
 
 Hi 👋 I am Abdelrahman
 ====================================
