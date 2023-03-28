@@ -3,7 +3,7 @@
 Hi 👋 I am Abdelrahman
 ====================================
 
-Full Stack Developer
+Full Stack & Flutter Developer
 ------------------------------------------
 
 <!-- <h3><a href="https://abdelrahman-tlayjeh.github.io/">My Portfolio</a></h3>>
